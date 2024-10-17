@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="quiz">
+<header>
+    <h1 id="h1">UE Quiz</h1>
+</header>
+
+    <div id="tracker">
+        <div class="num" id="num"> 1 </div>
+        <div class="num" id="num"> 2 </div>
+        <div class="num" id="num"> 3 </div>
+        <div class="num" id="num"> 4 </div>
+        <div class="num" id="num"> 5 </div>
+        <div class="num" id="num"> 6 </div>
+        <div class="num" id="num"> 7 </div>
+        <div class="num" id="num"> 8 </div>
+        <div class="num" id="num"> 9 </div>
+        <div class="num" id="num"> 10 </div>
+    </div>
+
+    <div class="containerr"> 
+        <div class="no-box"> 
+            <span class="no">1</span> 
+        </div> 
+       
+    <div class="container">
+        <p>In NCEA, How many credits do you need to achieve for University Entrance? </p> <hr> <br>
+        <input type="radio" class="options" name="question1">100 <br> <br>
+        <input type="radio" class="options" name="question1">15 <br> <br>
+        <input type="radio" class="options" name="question1">85 <br> <br>
+        <input type="radio" class="options" name="question1" id="correct1">60 <br>
+       <button class="Next" onclick="next(1)">Next</button>
+      
+       
+        
+    </div>
+
+    <div class="container">
+       <p> In Cambridge, How many points do you need for University entrance?</p> <hr> <br>
+        <input type="radio" class="options" name="question2">100 <br> <br>
+        <input type="radio" class="options" name="question2" id="correct2">120 <br> <br>
+        <input type="radio" class="options" name="question2">200 <br><br>
+        <input type="radio" class="options" name="question2">80 <br>
+        <button class="Next" onclick="next(2)">Next</button>
+    
+       
+        
+    </div>
+
+    <div class="container">
+       <p> How many NCEA classes do you need to get 15 credits in for University Entrance? </p> <hr> <br>
+        <input type="radio" class="options" name="question3">5 <br> <br>
+        <input type="radio" class="options" name="question3">1 <br> <br>
+        <input type="radio" class="options" name="question3" id="correct3">3 <br> <br>
+        <input type="radio" class="options" name="question3">4 <br>
+        <button class="Next" onclick="next(3)">Next</button>
+        
+
+     
+        
+    </div>
+
+    <div class="container">
+      <p>  How many D grades do you need for University entrance in cambridge? </p> <hr> <br>
+        <input type="radio" class="options" name="question4">4 <br> <br>
+        <input type="radio" class="options" name="question4">2 <br> <br>
+        <input type="radio" class="options" name="question4" id="correct4">3 <br> <br>
+        <input type="radio" class="options" name="question4">1 <br>
+        <button class="Next" onclick="next(4)">Next</button>
+        
+     
+        
+    </div>
+
+    <div class="container">
+        <p>Which Level of NCEA Math do you need to pass for University Entrance? </p> <hr> <br>
+        <input type="radio" class="options" name="question5" id="correct5">Level 1 <br> <br>
+        <input type="radio" class="options" name="question5">Level 2 <br> <br>
+        <input type="radio" class="options" name="question5">Level 3 <br> <br>
+        <input type="radio" class="options" name="question5">You don't need Math <br>
+        <button class="Next" onclick="next(5)">Next</button>
+        
+        
+        
+    </div>
+
+    <div class="container">
+        <p>Which Level of NCEA English do you need to pass for University Entrance? </p> <hr> <br>
+        <input type="radio" class="options" name="question6">Level 1 <br> <br>
+        <input type="radio" class="options" name="question6" id="correct6">Level 2 <br> <br>
+        <input type="radio" class="options" name="question6">Level 3 <br> <br>
+        <input type="radio" class="options" name="question6">You don't need English <br>
+        <button class="Next" onclick="next(6)">Next</button>
+        
+ 
+        
+    </div>
+
+    <div class="container">
+       <p> What grade do you need to earn in IGCSE math for University Entrance? </p> <hr> <br>
+        <input type="radio" class="options" name="question7">B <br> <br>
+        <input type="radio" class="options" name="question7" id="correct7">C <br> <br>
+        <input type="radio" class="options" name="question7">D <br> <br>
+        <input type="radio" class="options" name="question7">E <br>
+        <button class="Next" onclick="next(7)">Next</button>
+        
+      
+        
+    </div>
+
+    <div class="container">
+        <p>What grade do you need in AS English for University Entrance?</p> <hr> <br>
+        <input type="radio" class="options" name="question8" id="correct8">D <br> <br>
+        <input type="radio" class="options" name="question8">B <br> <br>
+        <input type="radio" class="options" name="question8">C <br> <br>
+        <input type="radio" class="options" name="question8">E <br>
+        <button class="Next" onclick="next(8)">Next</button>
+        
+       
+        
+    </div>
+
+    <div class="container">
+       <p> Does getting University Entrance guarantee acceptance into all courses? </p> <hr> <br>
+        <input type="radio" class="options" name="question9">Yes, All courses accept the minimum UE <br> <br>
+        <input type="radio" class="options" name="question9" id="correct9">No, Only some courses accept mimimum UE <br> <br>
+        <input type="radio" class="options" name="question9">Only certain Universities accept minimum UE <br> <br>
+        <input type="radio" class="options" name="question9">I dont know <br>
+        <button class="Next" onclick="next(9)">Next</button>
+       
+       
+        
+    </div>
+
+    <div class="container">
+       <p> Do you need a rank score for ALL Universities? </p> <hr> <br>
+        <input type="radio" class="options" name="question10">I don't know <br> <br>
+        <input type="radio" class="options" name="question10"> Yes, all Universities use rank scores <br> <br>
+        <input type="radio" class="options" name="question10">No, only Auckland University uses rank scores <br> <br>
+        <input type="radio" class="options" name="question10" id="correct10">No, only some Universities <br>
+        <button class="Submit" onclick="result(10)"> Submit </button>
+        
+     
+        
+    </div>
+    
+
+</div>
+
+
+
+
+
+</div>
+
+
+<script>
+    
+document.getElementsByClassName('container')[0].style.display = "block";
+
+function next(id){
+    document.getElementsByClassName('container')[id-1].style.display = "none";
+    document.getElementsByClassName('container')[id].style.display = "block";
+} 
+
+
+
+function result() {
+            var score = 0;
+            if (document.getElementById('correct1').checked) {
+                score++;
+            }
+            if (document.getElementById('correct2').checked) {
+                score++;
+            }
+            if (document.getElementById('correct3').checked) {
+                score++;
+            }
+            if (document.getElementById('correct4').checked) {
+                score++;
+            }
+            if (document.getElementById('correct5').checked) {
+                score++;
+            } 
+            if (document.getElementById('correct6').checked) {
+                score++;
+            } 
+            if (document.getElementById('correct7').checked) {
+                score++;
+            } 
+            if (document.getElementById('correct8').checked) {
+                score++;
+            } 
+            if (document.getElementById('correct9').checked) {
+                score++;
+            } 
+            if (document.getElementById('correct10').checked) {
+                score++;
+            }
+            alert("your score is: "+ score);
+        }
+
+</script>
+
+    
+</body>
+</html>
